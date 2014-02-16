@@ -7,12 +7,18 @@
   <remote  name="github"
            fetch="git://github.com/"
            review="https://gerrit.slimroms.net/"/>
+           
+  <remote name="twisted"
+           fetch="https://github.com/TwistedKat/" /> 
+           
+  <remote name="gh"
+           fetch="https://github.com/" />      
 
   <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="SlimRoms/android_build" remote="github" revision="kk4.4" >
+  <project path="build" name="twisted_build" remote="twisted" revision="tk4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -39,6 +45,12 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
+  <project path="device/asus/grouper" name="twisted_grouper" remote="twisted" revision="tk4.4" />
+  <project path="device/lge/hammerhead" name="twisted_hammerhead" remote="twisted" revision="tk4.4" />
+  <project path="device/lge/mako" name="twisted_mako" remote="twisted" revision="tk4.4" />
+  <project path="device/htc/ville" name="twisted_ville" remote="twisted" revision="tk4.4" />
+  <project path="device/htc/msm8960-common" name="CyanogenMod/android_device_htc_msm8960-common" remote="gh" revision="cm-11.0" groups="device" />
+  <project path="device/htc/s4-common" name="CyanogenMod/android_device_htc_s4-common" remote="gh" revision="cm-11.0" groups="device" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -287,6 +299,10 @@
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="kk4.4" />
   <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="kk4.4" />
   <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="kk4.4" />
+  <project path="kernel/htc/msm8960" name="twisted_kernel_htc_msm8960" remote="twisted" revision="tk4.4" />
+  <project path="kernel/lge/hammerhead" name="twisted_kernel_lge_hammerhead" remote="twisted" revision="tk4.4" />
+  <project path="kernel/lge/mako" name="twisted_kernel_lge_mako" remote="twisted" revision="tk4.4" />
+  <project path="kernel/asus/grouper" name="twisted_kernel_asus_grouper" remote="twisted" revision="tk4.4" />
   <project path="libcore" name="SlimRoms/platform_libcore" remote="github" revision="kk4.4" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -426,11 +442,30 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-  <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="kk4.4-caf" />
+  <project path="platform_manifest" name="twisted_manifest" remote="twisted" revision="tk4.4" />
 
-  <!-- New Additions for slim -->
-  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="kk4.4" />
-
+  <!-- New for twisted -->
+  <project path="vendor/twisted" name="vendor_twisted" remote="twisted" revision="tk4.4" />
+  
+  <!-- mako -->
+  <project path="vendor/lge" name="SlimRoms/proprietary_vendor_lge" remote="github" revision="kk4.4" />
+  <project path="vendor/qcom" name="SlimRoms/proprietary_vendor_qcom" remote="github" revision="kk4.4" />
+  <project path="vendor/broadcom" name="SlimRoms/proprietary_vendor_broadcom" remote="github" revision="kk4.4" />
+  
+  <!-- grouper -->
+  <project path="vendor/asus" name="SlimRoms/proprietary_vendor_asus" remote="github" revision="kk4.4" />
+  <project path="vendor/elan" name="SlimRoms/proprietary_vendor_elan" remote="github" revision="kk4.4" />
+  <project path="vendor/invensense" name="SlimRoms/proprietary_vendor_invensense" remote="github" revision="kk4.4" />
+  <project path="vendor/nvida" name="SlimRoms/proprietary_vendor_nvidia" remote="github" revision="kk4.4" />
+  <project path="vendor/nxp" name="SlimRoms/proprietary_vendor_nxp" remote="github" revision="kk4.4" />
+  <project path="vendor/widevine" name="SlimRoms/proprietary_vendor_widevine" remote="github" revision="kk4.4" />
+  
+  <!-- ville -->
+  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" remote="gh" revision="cm-11.0" />
+  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" remote="gh" revision="cm-11.0" />
+  <project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" remote="gh" revision="cm-11.0" />
+  <project path="vendor/htc" name="TheMuppets/proprietary_vendor_htc" remote="gh" revision="cm-11.0" />
+  
   <!-- Slim OTA -->
   <project path="packages/apps/SlimCenter" name="SlimRoms/packages_apps_SlimCenter" remote="github" revision="kk4.4" />
 
