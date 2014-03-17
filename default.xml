@@ -300,7 +300,7 @@
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="kk4.4" />
   <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="kk4.4" />
   <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="kk4.4" />
-  <project path="kernel/htc/msm8960" name="Cyanogenmod/kernel_htc_msm8960" remote="gh" revision="stable/cm-11.0" />
+  <project path="kernel/htc/msm8960" name="Cyanogenmod/android_kernel_htc_msm8960" remote="gh" revision="stable/cm-11.0" />
   <project path="kernel/lge/hammerhead" name="SlimRoms/kernel_lge_hammerhead" remote="github" revision="kk4.4" />
   <project path="kernel/lge/mako" name="SlimRoms/kernel_lge_mako" remote="github" revision="kk4.4" />
   <project path="kernel/asus/grouper" name="SlimRoms/kernel_asus_grouper" remote="github" revision="tk4.4" />
