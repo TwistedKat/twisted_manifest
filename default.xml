@@ -14,7 +14,7 @@
   <remote name="gh"
            fetch="https://github.com/" />      
 
-  <default revision="refs/tags/android-4.4.2_r2"
+  <default revision="refs/tags/android-4.4.1_r1"
            remote="aosp"
            sync-j="4" />
 
@@ -300,10 +300,10 @@
   <project path="hardware/ti/omap4xxx" name="SlimRoms/hardware_ti_omap4xxx" remote="github" revision="kk4.4" />
   <project path="hardware/ti/wlan" name="SlimRoms/hardware_ti_wlan" remote="github" revision="kk4.4" />
   <project path="hardware/ti/wpan" name="SlimRoms/hardware_ti_wpan" remote="github" revision="kk4.4" />
-  <project path="kernel/htc/msm8960" name="twisted_kernel_htc_msm8960" remote="twisted" revision="tk4.4" />
-  <project path="kernel/lge/hammerhead" name="twisted_kernel_lge_hammerhead" remote="twisted" revision="tk4.4" />
-  <project path="kernel/lge/mako" name="twisted_kernel_lge_mako" remote="twisted" revision="tk4.4" />
-  <project path="kernel/asus/grouper" name="twisted_kernel_asus_grouper" remote="twisted" revision="tk4.4" />
+  <project path="kernel/htc/msm8960" name="Cyanogenmod/kernel_htc_msm8960" remote="gh" revision="stable/cm-11.0" />
+  <project path="kernel/lge/hammerhead" name="SlimRoms/kernel_lge_hammerhead" remote="github" revision="kk4.4" />
+  <project path="kernel/lge/mako" name="SlimRoms/kernel_lge_mako" remote="github" revision="kk4.4" />
+  <project path="kernel/asus/grouper" name="SlimRoms/kernel_asus_grouper" remote="github" revision="tk4.4" />
   <project path="libcore" name="SlimRoms/platform_libcore" remote="github" revision="kk4.4" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
